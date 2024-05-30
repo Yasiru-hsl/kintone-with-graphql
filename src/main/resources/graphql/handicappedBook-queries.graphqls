@@ -1,0 +1,9 @@
+type Query {
+    filterHandicappedBooks(filter: String!, sortBy:String): HandicappedBookFilterResponse
+}
+
+type HandicappedBookFilterResponse{
+    statusCode:String
+    message:String
+    totalElements:Int
+}

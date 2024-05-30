@@ -1,0 +1,24 @@
+type Mutation{
+    createHandicapped(handicappedBookInputs:HandicappedBookInput):HandicappedBook
+}
+
+input HandicappedBookInput{
+    notebookNumber:String
+    fullNameHandicapped:String
+    addressHandicapped:String
+    gradeHandicapped:String
+    dobHandicapped:String
+    dateOfExpiryHandicapped:String
+    dateOfIssueHandicapped:String
+    isHandicappedUpdate:Boolean
+}
+type HandicappedBook{
+    notebookNumber:String
+    fullNameHandicapped:String
+    addressHandicapped:String
+    gradeHandicapped:String
+    dobHandicapped:String
+    dateOfExpiryHandicapped:String
+    dateOfIssueHandicapped:String
+    isHandicappedUpdate:Boolean
+}
